@@ -1,0 +1,18 @@
+<h1>Email Addresses</h1>
+
+
+  <% all_emails.each do |email| %>
+
+    <%= email["address"] %><br>
+
+
+  <% end %>
+
+
+<h1>Input Email Address</h1>
+
+<form method="post" action="/email">
+  <label for="email">Email Address:</label><br>
+  <input id="email" name="email">
+  <button>Submit</button>
+</form>
